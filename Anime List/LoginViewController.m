@@ -38,6 +38,9 @@
     [self.view addSubview:activityIndicator];
     _passwordField.secureTextEntry = YES;
     
+    // put image behind other elements
+    [self.view sendSubviewToBack: _bgImage];
+    
     if ([UserStore currentUser].username) {
         _userNameField.text = [UserStore currentUser].username;
     }

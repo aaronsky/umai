@@ -40,27 +40,28 @@
     _animeName.text = _anime.series_title;
     _epCountLabel.text = [NSString stringWithFormat:@"%d episodes",_anime.series_episodes];
     _runDateLabel.text = [NSString stringWithFormat:@"%@ - %@", [dateFormat stringFromDate:_anime.series_start], [dateFormat stringFromDate:_anime.series_end]];
+    _synopsisLabel.editable = NO; // don't allow editing text
     [self getSynopsisForTitle:_anime.series_title];
     switch (_anime.my_status) {
         case kCompleted:
             _watchStatusLabel.text = @"You finished this anime!";
-            _watchStatusLabel.backgroundColor = [UIColor greenColor];
+            _watchStatusLabel.backgroundColor = [UIColor colorWithRed:0.25 green:0.5 blue:0.25 alpha:1.0 /*greenColor*/];
             break;
         case kOnHold:
             _watchStatusLabel.text = @"You put this anime on hold";
-            _watchStatusLabel.backgroundColor = [UIColor redColor];
+            _watchStatusLabel.backgroundColor = [UIColor colorWithRed:0.75 green:0.0 blue:0.0 alpha:1.0 /*redColor*/];
             break;
         case kDropped:
             _watchStatusLabel.text = @"You dropped this anime";
-            _watchStatusLabel.backgroundColor = [UIColor purpleColor];
+            _watchStatusLabel.backgroundColor = [UIColor colorWithRed:0.75 green:0.0 blue:0.75 alpha:1.0 /*purpleColor*/];
             break;
         case kWatching:
             _watchStatusLabel.text = @"You are currently watching this anime";
-            _watchStatusLabel.backgroundColor = [UIColor blueColor];
+            _watchStatusLabel.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.75 alpha:1.0 /*blueColor*/];
             break;
         case kPlanToWatch:
             _watchStatusLabel.text = @"You plan to watch this anime.";
-            _watchStatusLabel.backgroundColor = [UIColor grayColor];
+            _watchStatusLabel.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0 /*grayColor*/];
             break;
         default:
             [UIView animateWithDuration:0.1f animations:^{
@@ -134,6 +135,7 @@
                     }
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
+                        synopsis = [self cleanUpText:synopsis];
                         _synopsisLabel.text = synopsis;
                         NSLog(@"i tried");
                     });
@@ -143,6 +145,17 @@
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     }];
     [dataTask resume];
+}
+
+-(NSString*)cleanUpText:(NSString*)original
+{
+    NSString* modified = [original stringByReplacingOccurrencesOfString:@"<br />" withString:@""];
+    modified = [modified stringByReplacingOccurrencesOfString:@"<br/>" withString:@""];
+    
+    modified = [modified stringByReplacingOccurrencesOfString:@"&quot;" withString:@"\""];
+    modified = [modified stringByReplacingOccurrencesOfString:@"&#039;" withString:@"'"];
+    
+    return modified ;
 }
 
 - (IBAction)tappedImage:(UITapGestureRecognizer *)sender {
