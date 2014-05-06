@@ -150,8 +150,15 @@
                     
                     for (NSDictionary* dict in entries) {
                         NSLog(@"%@",dict);
-                        Anime* anime = [[Anime alloc]initWithDictionary:dict];
-                        [tempArray addObject:anime];
+                        Anime* anime;
+                        if ([dict isKindOfClass:[NSString class]]) {
+                            anime = [[Anime alloc] initWithDictionary:dictFromXml[@"entry"]];
+                        } else {
+                            anime = [[Anime alloc]initWithDictionary:dict];
+                        }
+                        if (anime.series_title && anime.series_animedb_id) {
+                            [tempArray addObject:anime];
+                        }
                     }
                     
                     dispatch_async(dispatch_get_main_queue(), ^{

@@ -17,8 +17,8 @@
         [dateFormat setDateFormat:@"yyyy-mm-dd"];
         
         _series_animedb_id = [dictionary[@"series_animedb_id"] ? dictionary[@"series_animedb_id"] : (dictionary[@"id"] ? dictionary[@"id"] : 0) intValue];
-        _series_title = dictionary[@"series_title"] ? dictionary[@"series_title"] : dictionary[@"title"];
-        _series_synonyms = [(dictionary[@"series_synonyms"] ? dictionary[@"series_synonyms"] : dictionary[@"synonyms"]) componentsSeparatedByString:@";"];;
+        _series_title = dictionary[@"series_title"] ? [NSString stringWithFormat:@"%@",dictionary[@"series_title"]] : (dictionary[@"title"] ? [NSString stringWithFormat:@"%@",dictionary[@"title"]] : nil);
+        _series_synonyms = [(dictionary[@"series_synonyms"] ? dictionary[@"series_synonyms"] : dictionary[@"synonyms"]) componentsSeparatedByString:@";"];
         _series_type = [dictionary[@"series_type"] ? dictionary[@"series_type"] : (dictionary[@"type"] ? dictionary[@"type"] : 0) intValue];
         _series_episodes = [dictionary[@"series_episodes"] ? dictionary[@"series_episodes"] : (dictionary[@"episodes"] ? dictionary[@"episodes"] : 0) intValue];
         _series_status = dictionary[@"series_status"] ? [dictionary[@"series_status"] intValue] : 0;

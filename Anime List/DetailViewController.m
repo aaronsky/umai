@@ -131,7 +131,12 @@
                     }
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        synopsis = [self cleanUpText:synopsis];
+                        if ([synopsis isKindOfClass:[NSDictionary class]]) {
+                            synopsis = @"No synopsis was found";
+                        } else {
+                            
+                            synopsis = [self cleanUpText:[NSString stringWithFormat:@"%@",synopsis]];
+                        }
                         _synopsisLabel.text = synopsis;
                         NSLog(@"i tried");
                     });
@@ -147,10 +152,8 @@
 {
     NSString* modified = [original stringByReplacingOccurrencesOfString:@"<br />" withString:@""];
     modified = [modified stringByReplacingOccurrencesOfString:@"<br/>" withString:@""];
-    
     modified = [modified stringByReplacingOccurrencesOfString:@"&quot;" withString:@"\""];
     modified = [modified stringByReplacingOccurrencesOfString:@"&#039;" withString:@"'"];
-    
     return modified ;
 }
 
