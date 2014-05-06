@@ -1,18 +1,18 @@
 //
-//  AddMediaViewController.m
+//  GroupAddFieldTableViewController.m
 //  Anime List
 //
-//  Created by Aaron Sky on 4/18/14.
+//  Created by Aaron Sky on 4/30/14.
 //  Copyright (c) 2014 Aaron Sky. All rights reserved.
 //
 
-#import "AddMediaViewController.h"
+#import "GroupAddFieldTableViewController.h"
 
-@interface AddMediaViewController ()
+@interface GroupAddFieldTableViewController ()
 
 @end
 
-@implementation AddMediaViewController
+@implementation GroupAddFieldTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -44,14 +44,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return 0;
 }
 
 /*
@@ -64,33 +66,6 @@
     return cell;
 }
 */
-
-- (IBAction)doneEditing:(id)sender {
-    
-    NSMutableString* addString = [NSMutableString string];
-    [addString appendString:@"<?xml version=\"1.0\" encoding=\"UTF-8\"?><entry>"];
-    [addString appendString:[NSString stringWithFormat:@"<episode>%@</episode>",@"11"]];
-    [addString appendString:[NSString stringWithFormat:@"<status>%@</status>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<score>%@</score>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<downloaded_episodes>%@</downloaded_episodes>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<storage_type>%@</storage_type>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<storage_value>%@</storage_value>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<times_rewatched>%@</times_rewatched>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<rewatch_value>%@</rewatch_value>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<date_start>%@</date_start>",[[[NSDateFormatter alloc]init] stringFromDate:_anime.my_start_date]]];
-    [addString appendString:[NSString stringWithFormat:@"<date_finish>%@</date_finish>",[[[NSDateFormatter alloc]init] stringFromDate:_anime.my_finish_date]]];
-    [addString appendString:[NSString stringWithFormat:@"<priority>%@</priority>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<enable_discussion>%@</enable_discussion>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<enable_rewatching>%@</enable_rewatching>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<comments>%@</comments>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<fansub_group>%@</fansub_group>",@""]];
-    [addString appendString:[NSString stringWithFormat:@"<tags>%@</tags>",@""]];
-    [addString appendString:@"</entry>"];
-    
-    NSLog(@"%@",addString);
-    
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 /*
 // Override to support conditional editing of the table view.

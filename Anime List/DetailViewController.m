@@ -114,20 +114,16 @@
                         if ([dict isKindOfClass:[NSString class]]) {
                             if (dictFromXml[@"entry"][@"id"]) {
                                 if ([dictFromXml[@"entry"][@"id"] intValue] == _anime.series_animedb_id) {
-                                    if (dictFromXml[@"entry"][@"synopsis"]) {
-                                        synopsis = dictFromXml[@"entry"][@"synopsis"];
+                                    synopsis = dictFromXml[@"entry"][@"synopsis"] ? dictFromXml[@"entry"][@"synopsis"] : synopsis;
                                         break;
-                                    }
                                 }
                             }
                         } else {
                             NSLog(@"%@",dict);
                             if ([dict objectForKey:@"id"]) {
                                 if ([[dict objectForKey:@"id"] intValue] == _anime.series_animedb_id) {
-                                    if ([dict objectForKey:@"synopsis"]) {
-                                        synopsis = [dict objectForKey:@"synopsis"];
+                                    synopsis = [dict objectForKey:@"synopsis"] ? [dict objectForKey:@"synopsis"] : synopsis;
                                         break;
-                                    }
                                 }
                             }
                         }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EB9BA7F0-79FF-4CDB-BE71-01FFA81F3DCF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Anime List</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2D764153-F20A-4B75-9835-199FDF8C9ABE</key>
+		<string>https://github.com/aaronsky/Umai.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Anime List.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2D764153-F20A-4B75-9835-199FDF8C9ABE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aaronsky/Umai.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2D764153-F20A-4B75-9835-199FDF8C9ABE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2D764153-F20A-4B75-9835-199FDF8C9ABE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Anime List</string>
+		</dict>
+	</array>
+</dict>
+</plist>

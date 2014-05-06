@@ -10,6 +10,7 @@
 		C1085FA2190D71BF000E68A0 /* CollectionSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1085FA1190D71BF000E68A0 /* CollectionSearchViewController.m */; };
 		C1085FA5190D71D6000E68A0 /* CollectionMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1085FA4190D71D6000E68A0 /* CollectionMediaViewController.m */; };
 		C1085FA9190D73AC000E68A0 /* AnimeListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1085FA8190D73AC000E68A0 /* AnimeListCollectionViewCell.m */; };
+		C111379F1911A5CA00EF5944 /* GroupAddFieldTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C111379E1911A5CA00EF5944 /* GroupAddFieldTableViewController.m */; };
 		C135C6D31901CF11005F3436 /* TableSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C135C6D21901CF11005F3436 /* TableSearchViewController.m */; };
 		C135C6D71901CF43005F3436 /* TableMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C135C6D61901CF43005F3436 /* TableMediaViewController.m */; };
 		C135C6DA1901CF8F005F3436 /* AddMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C135C6D91901CF8F005F3436 /* AddMediaViewController.m */; };
@@ -54,6 +55,8 @@
 		C1085FA4190D71D6000E68A0 /* CollectionMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionMediaViewController.m; sourceTree = "<group>"; };
 		C1085FA7190D73AC000E68A0 /* AnimeListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeListCollectionViewCell.h; sourceTree = "<group>"; };
 		C1085FA8190D73AC000E68A0 /* AnimeListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeListCollectionViewCell.m; sourceTree = "<group>"; };
+		C111379D1911A5CA00EF5944 /* GroupAddFieldTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAddFieldTableViewController.h; sourceTree = "<group>"; };
+		C111379E1911A5CA00EF5944 /* GroupAddFieldTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupAddFieldTableViewController.m; sourceTree = "<group>"; };
 		C135C6D11901CF11005F3436 /* TableSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSearchViewController.h; sourceTree = "<group>"; };
 		C135C6D21901CF11005F3436 /* TableSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSearchViewController.m; sourceTree = "<group>"; };
 		C135C6D51901CF43005F3436 /* TableMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableMediaViewController.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				C1085FA6190D71DC000E68A0 /* iPad */,
 				C135C6D81901CF8F005F3436 /* AddMediaViewController.h */,
 				C135C6D91901CF8F005F3436 /* AddMediaViewController.m */,
+				C111379D1911A5CA00EF5944 /* GroupAddFieldTableViewController.h */,
+				C111379E1911A5CA00EF5944 /* GroupAddFieldTableViewController.m */,
 				C17CC1821901CFEF006455BC /* DetailViewController.h */,
 				C17CC1831901CFEF006455BC /* DetailViewController.m */,
 				C1D830001908BA6C00D3DD7E /* LoginViewController.h */,
@@ -362,6 +367,7 @@
 				C1D830021908BA6C00D3DD7E /* LoginViewController.m in Sources */,
 				C1085FA2190D71BF000E68A0 /* CollectionSearchViewController.m in Sources */,
 				C1F295CB19000D7700ACFDED /* main.m in Sources */,
+				C111379F1911A5CA00EF5944 /* GroupAddFieldTableViewController.m in Sources */,
 				C13C10BE190CA30100848141 /* XMLDictionary.m in Sources */,
 				C147A0C619099A5E00EE8DE8 /* AnimeListTableViewCell.m in Sources */,
 				C135C6DA1901CF8F005F3436 /* AddMediaViewController.m in Sources */,
