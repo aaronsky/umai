@@ -15,6 +15,7 @@
 @interface DetailViewController : UIViewController
 
 @property (nonatomic, weak) Anime* anime;
+@property (nonatomic) BOOL alreadyAdded;
 @property (weak, nonatomic) IBOutlet UIImageView *animeImageView;
 @property (weak, nonatomic) IBOutlet UILabel *animeName;
 @property (weak, nonatomic) IBOutlet UILabel *epCountLabel;

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Anime.h"
 #import "UserStore.h"
+#import "GroupAddFieldTableViewController.h"
 
 typedef enum {
     kRequired,

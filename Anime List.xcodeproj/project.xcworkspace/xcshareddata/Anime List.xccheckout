@@ -5,31 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-	<string>EB9BA7F0-79FF-4CDB-BE71-01FFA81F3DCF</string>
-=======
-	<string>FC3366EA-7C91-4116-AE05-6AED037171FA</string>
->>>>>>> FETCH_HEAD
+	<string>8282D2E4-EC39-446E-AB71-458A7BCB95BC</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Anime List</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-<<<<<<< HEAD
-		<key>2D764153-F20A-4B75-9835-199FDF8C9ABE</key>
-=======
-		<key>768269C5-6D8F-4FC6-BF2A-634AC425A8E1</key>
->>>>>>> FETCH_HEAD
+		<key>FA2B05A3-7AF5-45B3-A965-404796444F67</key>
 		<string>https://github.com/aaronsky/Umai.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Anime List.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-<<<<<<< HEAD
-		<key>2D764153-F20A-4B75-9835-199FDF8C9ABE</key>
-=======
-		<key>768269C5-6D8F-4FC6-BF2A-634AC425A8E1</key>
->>>>>>> FETCH_HEAD
+		<key>FA2B05A3-7AF5-45B3-A965-404796444F67</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -37,26 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-<<<<<<< HEAD
-	<string>2D764153-F20A-4B75-9835-199FDF8C9ABE</string>
-=======
-	<string>768269C5-6D8F-4FC6-BF2A-634AC425A8E1</string>
->>>>>>> FETCH_HEAD
+	<string>FA2B05A3-7AF5-45B3-A965-404796444F67</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-<<<<<<< HEAD
-			<string>2D764153-F20A-4B75-9835-199FDF8C9ABE</string>
+			<string>FA2B05A3-7AF5-45B3-A965-404796444F67</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Anime List</string>
-=======
-			<string>768269C5-6D8F-4FC6-BF2A-634AC425A8E1</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Umai</string>
->>>>>>> FETCH_HEAD
 		</dict>
 	</array>
 </dict>

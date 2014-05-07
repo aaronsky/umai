@@ -164,7 +164,13 @@
     _rewatchedSelectionLabel.text = [NSString stringWithFormat:@"%f/%d",sender.value,_anime.series_episodes];
 }
 
-
+-(IBAction)unwindGroup:(UIStoryboardSegue*)sender
+{
+    GroupAddFieldTableViewController* groupVC = (GroupAddFieldTableViewController*)[sender sourceViewController];
+    _statusSelectionLabel.text = groupVC.selected;
+    _storageTypeSelectionLabel.text = groupVC.selected;
+    _rewatchValueSelectionLabel.text = groupVC.selected;
+}
 
 #pragma mark - Navigation
 

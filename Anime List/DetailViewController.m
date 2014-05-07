@@ -154,7 +154,9 @@
     modified = [modified stringByReplacingOccurrencesOfString:@"<br/>" withString:@""];
     modified = [modified stringByReplacingOccurrencesOfString:@"&quot;" withString:@"\""];
     modified = [modified stringByReplacingOccurrencesOfString:@"&#039;" withString:@"'"];
-    return modified ;
+    return modified;
+    
+    //return [[NSString alloc]initWithData:[original dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES] encoding:NSASCIIStringEncoding];
 }
 
 - (IBAction)tappedImage:(UITapGestureRecognizer *)sender {
@@ -163,7 +165,16 @@
 
 
  #pragma mark - Navigation
- 
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if ([identifier isEqualToString:@"UpdateFromDetail"]) {
+        [[[UIAlertView alloc] initWithTitle:@"Incomplete Feature" message:@"Adding/Updating currently unsupported in prototype build" delegate:self cancelButtonTitle:@"sry" otherButtonTitles:nil] show];
+        return NO;
+    }
+    return YES;
+}
+
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
  {

@@ -11,5 +11,6 @@
 @interface GroupAddFieldTableViewController : UITableViewController
 
 @property (nonatomic) NSMutableArray* fields;
+@property (nonatomic) NSString* selected;
 
 @end

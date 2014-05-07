@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QVt-hC-VzE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QVt-hC-VzE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Table Media View Controller - Favorites-->
@@ -486,9 +486,16 @@
                             <outlet property="delegate" destination="0P8-JS-Eod" id="JlY-4R-wDq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="zzs-YB-SI9"/>
+                    <navigationItem key="navigationItem" id="zzs-YB-SI9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="spd-m1-D00">
+                            <connections>
+                                <segue destination="0gz-GN-h64" kind="unwind" unwindAction="unwindGroup:" id="iZi-XG-dBv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhw-7S-t2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0gz-GN-h64" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1953" y="686"/>
         </scene>
@@ -528,9 +535,16 @@
                             <outlet property="delegate" destination="58B-ua-I3A" id="zkY-4q-P74"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ma8-La-Y8e"/>
+                    <navigationItem key="navigationItem" id="ma8-La-Y8e">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="gqb-Bf-HQn">
+                            <connections>
+                                <segue destination="350-Lr-rn1" kind="unwind" unwindAction="unwindGroup:" id="ZCI-9O-2tz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XfG-EQ-68c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="350-Lr-rn1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1953" y="1383"/>
         </scene>
@@ -638,9 +652,16 @@
                             <outlet property="delegate" destination="Kfs-es-rua" id="0Wa-ab-lpU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Status" id="7K0-OB-Orc"/>
+                    <navigationItem key="navigationItem" title="Status" id="7K0-OB-Orc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="50Q-7x-aw9">
+                            <connections>
+                                <segue destination="z4f-AC-xft" kind="unwind" unwindAction="unwindGroup:" id="htK-Nc-Dig"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5v-U5-sy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="z4f-AC-xft" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1953" y="4"/>
         </scene>
