@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QVt-hC-VzE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QVt-hC-VzE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Table Media View Controller - Favorites-->
@@ -771,31 +771,34 @@
                         <viewControllerLayoutGuide type="top" id="4zD-IN-9BX"/>
                         <viewControllerLayoutGuide type="bottom" id="waS-3R-HL1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Aam-LW-wiC">
+                    <view key="view" contentMode="scaleToFill" id="Aam-LW-wiC" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PUq-mz-83d">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PUq-mz-83d">
                                 <rect key="frame" x="20" y="140" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4La-3d-7Bh">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4La-3d-7Bh">
                                 <rect key="frame" x="20" y="206" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logging In to MyAnimeList" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="FuY-36-fHz">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logging In to MyAnimeList" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="FuY-36-fHz">
                                 <rect key="frame" x="20" y="90" width="280" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="dho-9c-iMN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01d-b2-qK8">
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01d-b2-qK8">
                                 <rect key="frame" x="137" y="266" width="43" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log in">
@@ -805,15 +808,49 @@
                                     <action selector="verifyLogin:" destination="QVt-hC-VzE" eventType="touchUpInside" id="xsP-KR-YAb"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nichijou" translatesAutoresizingMaskIntoConstraints="NO" id="AzA-U8-y5y">
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nichijou" translatesAutoresizingMaskIntoConstraints="NO" id="AzA-U8-y5y">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MT6-1f-Yh3">
+                                <rect key="frame" x="41" y="518" width="238" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Account on MyAnimeList">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccount:" destination="QVt-hC-VzE" eventType="touchUpInside" id="guw-pY-QDH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="01d-b2-qK8" firstAttribute="leading" secondItem="Aam-LW-wiC" secondAttribute="leading" constant="137" id="2w1-vy-WRA"/>
+                            <constraint firstItem="AzA-U8-y5y" firstAttribute="leading" secondItem="Aam-LW-wiC" secondAttribute="leading" id="3O8-q3-Caa"/>
+                            <constraint firstItem="01d-b2-qK8" firstAttribute="top" secondItem="4La-3d-7Bh" secondAttribute="bottom" constant="30" id="7Aw-gH-OjL"/>
+                            <constraint firstAttribute="trailing" secondItem="FuY-36-fHz" secondAttribute="trailing" constant="20" symbolic="YES" id="Ljl-ke-fLf"/>
+                            <constraint firstItem="4La-3d-7Bh" firstAttribute="trailing" secondItem="PUq-mz-83d" secondAttribute="trailing" id="QVx-2Z-vAa"/>
+                            <constraint firstItem="AzA-U8-y5y" firstAttribute="centerX" secondItem="MT6-1f-Yh3" secondAttribute="centerX" id="VG0-9d-7yL"/>
+                            <constraint firstItem="4La-3d-7Bh" firstAttribute="top" secondItem="PUq-mz-83d" secondAttribute="bottom" constant="36" id="Wkw-vu-573"/>
+                            <constraint firstItem="PUq-mz-83d" firstAttribute="leading" secondItem="FuY-36-fHz" secondAttribute="leading" id="ZhJ-GO-Fvr"/>
+                            <constraint firstItem="FuY-36-fHz" firstAttribute="top" secondItem="4zD-IN-9BX" secondAttribute="bottom" constant="70" id="am7-1t-L4l"/>
+                            <constraint firstAttribute="bottom" secondItem="MT6-1f-Yh3" secondAttribute="bottom" constant="20" symbolic="YES" id="d5f-rK-A9q"/>
+                            <constraint firstItem="4La-3d-7Bh" firstAttribute="centerX" secondItem="MT6-1f-Yh3" secondAttribute="centerX" id="hX5-4X-zqb"/>
+                            <constraint firstItem="4La-3d-7Bh" firstAttribute="leading" secondItem="PUq-mz-83d" secondAttribute="leading" id="mp6-5E-EsV"/>
+                            <constraint firstItem="MT6-1f-Yh3" firstAttribute="leading" secondItem="Aam-LW-wiC" secondAttribute="leading" constant="41" id="nXE-YM-bj8"/>
+                            <constraint firstItem="PUq-mz-83d" firstAttribute="top" secondItem="FuY-36-fHz" secondAttribute="bottom" constant="8" symbolic="YES" id="nYv-RF-PRN"/>
+                            <constraint firstItem="FuY-36-fHz" firstAttribute="leading" secondItem="Aam-LW-wiC" secondAttribute="leading" constant="20" symbolic="YES" id="o0Z-7z-nIF"/>
+                            <constraint firstAttribute="bottom" secondItem="AzA-U8-y5y" secondAttribute="bottom" id="r2G-Ms-e1K"/>
+                            <constraint firstItem="AzA-U8-y5y" firstAttribute="top" secondItem="Aam-LW-wiC" secondAttribute="top" id="rZh-Kn-c56"/>
+                            <constraint firstItem="FuY-36-fHz" firstAttribute="trailing" secondItem="PUq-mz-83d" secondAttribute="trailing" id="zEr-nW-jHA"/>
+                        </constraints>
+                        <connections>
+                            <action selector="dismissKeyboard:" destination="QVt-hC-VzE" eventType="touchDragInside" id="A1K-kK-3c5"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="bgImage" destination="AzA-U8-y5y" id="ADa-Ge-gS3"/>
+                        <outlet property="createAccountButton" destination="MT6-1f-Yh3" id="DVE-sV-NEd"/>
                         <outlet property="logInButton" destination="01d-b2-qK8" id="hOO-7a-AfG"/>
                         <outlet property="passwordField" destination="4La-3d-7Bh" id="k7I-HK-PZk"/>
                         <outlet property="promptLabel" destination="FuY-36-fHz" id="kMr-1k-Z3l"/>

@@ -24,7 +24,7 @@
         _series_status = dictionary[@"series_status"] ? [dictionary[@"series_status"] intValue] : 0;
         _series_start = dictionary[@"series_start"] ? [dateFormat dateFromString:dictionary[@"series_start"]] : (dictionary[@"start_date"] ? [dateFormat dateFromString:dictionary[@"start_date"]] : [NSDate date]);
         _series_end = dictionary[@"series_end"] ? [dateFormat dateFromString:dictionary[@"series_end"]] : (dictionary[@"end_date"] ? [dateFormat dateFromString:dictionary[@"end_date"]] : [NSDate date]);
-        _series_image = dictionary[@"series_image"] ? [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:dictionary[@"series_image"]]]] : (dictionary[@"image"] ? [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:dictionary[@"image"]]]] : [[UIImage alloc]init]);
+        _series_image = dictionary[@"series_image"] ? [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:dictionary[@"series_image"]]]] : (dictionary[@"image"] ? [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:dictionary[@"image"]]]] : nil);
         _series_synopsis = dictionary[@"synopsis"] ? dictionary[@"synopsis"] : @"";
         _my_id = [(dictionary[@"my_id"] ? dictionary[@"my_id"] : 0) intValue];
         _my_watched_episodes = [(dictionary[@"my_watched_episodes"] ? dictionary[@"my_watched_episodes"] : 0) intValue];

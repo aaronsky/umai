@@ -65,7 +65,7 @@
                          } completion:^(BOOL finished) {
                              [activityIndicator stopAnimating];
                              activityIndicator.hidden = YES;
-                             _userNameField.hidden = _passwordField.hidden = _logInButton.hidden = NO;
+                             _userNameField.hidden = _passwordField.hidden = _logInButton.hidden = _createAccountButton.hidden = NO;
                              [UIView animateWithDuration:0.5f
                                                    delay:0.0f
                                                  options:UIViewAnimationOptionCurveEaseOut
@@ -73,6 +73,7 @@
                                                   [_userNameField setAlpha:1.0f];
                                                   [_passwordField setAlpha:1.0f];
                                                   [_logInButton setAlpha:1.0f];
+                                                  [_createAccountButton setAlpha:1.0f];
                                               } completion:^(BOOL finished) {
                                                   NSLog(@"No saved login was found");
                                               }];
@@ -159,5 +160,15 @@
     // Pass the selected object to the new view controller.
 }
 
+-(IBAction)dismissKeyboard:(id)sender
+{
+    [_userNameField resignFirstResponder];
+    [_passwordField resignFirstResponder];
+}
+
+// Go to website to create account
+- (IBAction)createAccount:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://myanimelist.net/register.php"]];
+}
 
 @end

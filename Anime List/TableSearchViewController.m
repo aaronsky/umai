@@ -158,6 +158,10 @@
                         }
                         if (anime.series_title && anime.series_animedb_id) {
                             [tempArray addObject:anime];
+                            if([dict isKindOfClass:[NSString class]] && anime)
+                            {
+                                break;
+                            }
                         }
                     }
                     

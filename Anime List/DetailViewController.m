@@ -66,10 +66,16 @@
         default:
             [UIView animateWithDuration:0.1f animations:^{
                 _watchStatusLabel.frame = CGRectMake(_watchStatusLabel.frame.origin.x, _watchStatusLabel.frame.origin.x, _watchStatusLabel.frame.size.width, 0.0f);
+            } completion:^(BOOL finished) {
+                _watchStatusLabel.hidden = YES;
             }];
             break;
     }
-    _animeImageView.image = _anime.series_image;
+    if (_anime.series_image) {
+        _animeImageView.image = _anime.series_image;
+    } else {
+        _animeImageView.userInteractionEnabled = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning
