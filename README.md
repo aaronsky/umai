@@ -1,6 +1,6 @@
 Umai
 ====
-MyAnimeList app for iOS. Developed by Aaron Sky and Jennifer Stanton for coursework.
+MyAnimeList app for iOS. Developed by Aaron Sky ([@aaronsky](https://github.com/aaronsky)) and Jennifer Stanton ([@notyouravgjen](https://github.com/notyouravgjen)) for coursework.
 
 License
 ====
